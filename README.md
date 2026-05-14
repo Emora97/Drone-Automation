@@ -1,4 +1,6 @@
 # Crazyflie Trajectory Validation
+To install required libraries and dependencies, follow the link to Bitcraze's tutorial below:
+https://www.bitcraze.io/documentation/tutorials/getting-started-with-crazyflie-2-x/#controlling-the-crazyflie
 
 This project documents figure-8 trajectory testing using a Crazyflie 2.1+ microdrone with Flowdeck v2 onboard state estimation. Python scripts are used for flight control, telemetry logging, and OpenCV-based trajectory visualization.
 
