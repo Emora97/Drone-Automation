@@ -11,7 +11,7 @@ The current implementation focuses on:
 - Autonomous figure-eight trajectory generation
 - Onboard Extended Kalman Filter (EKF) state estimation
 - Flight data logging
-- External ArUco marker tracking with OpenCV
+- External ArUco marker tracking with OpenCV (Separate repository, see OpenCV-Tracking)
 - Markerless object tracking comparison
 - Camera calibration and pose estimation
 - Quantitative comparison between onboard and external localization methods
@@ -45,13 +45,6 @@ Future work includes the implementation and evaluation of lightweight Model Pred
 │   ├── trajectories/
 │   └── utilities/
 │
-├── opencv/
-│   ├── camera_calibration.py
-│   ├── aruco_tracker.py
-│   ├── markerless_tracker.py
-│   ├── compare_tracking.py
-│   └── visualization.py
-│
 ├── data/
 │   ├── logs/
 │   ├── calibration/
@@ -62,7 +55,6 @@ Future work includes the implementation and evaluation of lightweight Model Pred
 └── README.md
 ```
 
-*(Directory names may differ depending on repository organization.)*
 
 ---
 
@@ -93,8 +85,8 @@ Future work includes the implementation and evaluation of lightweight Model Pred
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/<repository-name>.git
-cd <repository-name>
+git clone https://github.com<emora97>/<Drone-Automation>.git
+cd <Drone-Automation>
 ```
 
 Create a virtual environment:
@@ -142,7 +134,7 @@ python camera_calibration.py
 Execute the Crazyflie flight script to generate the desired trajectory while logging onboard state estimates.
 
 ```bash
-python main.py
+python main8.py
 ```
 
 ---
